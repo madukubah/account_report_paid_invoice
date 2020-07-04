@@ -1,3 +1,3 @@
 
 
-from . import pos_temp
+from . import invoice_temp

@@ -1,23 +1,21 @@
 # -*- coding: utf-8 -*-
 
 {
-    'name': 'POS Report Sale Person',
-    'category': 'sale',
+    'name': 'Accounting Paid Invoices Report',
+    'category': 'account',
     'version': '0.1',
-    'summary': 'This module provides POS Report Sale Person',
+    'summary': 'This module provides Accounting Paid Invoices Report',
     'author': 'Technoindo.com',
-    'description': '''This module provides Extra Report(Receivable & Payable report and PoS report).''',
+    'description': '''This module provides Accounting Paid Invoices Report.''',
     'depends': [
         'base', 
         'sale', 
         'account', 
-        'pos_cashback', 
-        'point_of_sale'
         ],
     'data': [
-        'views/pos_view.xml',
-        'report/pos_temp.xml',
-        'report/pos_report.xml',
+        'views/report_view.xml',
+        'report/invoice_temp.xml',
+        'report/invoice_report.xml',
     ],
     'qweb': [
         # 'static/src/xml/cashback_templates.xml',

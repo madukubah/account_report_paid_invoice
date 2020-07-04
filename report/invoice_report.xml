@@ -6,8 +6,8 @@
                 string="Saleperson wise report"
                 model="point_of_sale.pos.report"
                 report_type="qweb-pdf"
-                file="pos_report_saleperson_groupby.pos_temp"
-                name="pos_report_saleperson_groupby.pos_temp"
+                file="account_report_paid_invoice.invoice_temp"
+                name="account_report_paid_invoice.invoice_temp"
         />
     </data>
 </odoo>

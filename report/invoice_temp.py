@@ -3,7 +3,7 @@ from odoo import api, models
 
 
 class ReportSalesSalespersonWise(models.AbstractModel):
-    _name = 'report.pos_report_saleperson_groupby.pos_temp'
+    _name = 'report.account_report_paid_invoice.invoice_temp'
 
     @api.model
     def render_html(self, docids, data=None):
@@ -15,4 +15,4 @@ class ReportSalesSalespersonWise(models.AbstractModel):
             'end_date': data['end_date'],
         }
         print "===================docargs",docargs
-        return self.env['report'].render('pos_report_saleperson_groupby.pos_temp', docargs)
+        return self.env['report'].render('account_report_paid_invoice.invoice_temp', docargs)
