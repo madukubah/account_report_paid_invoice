@@ -20,7 +20,7 @@ class AccountPaidInvoicesReport(models.TransientModel):
 
     @api.multi
     def print_vise_report(self):
-        invoices = self.env['account.invoice'].search([ ('date_invoice', '>=', self.start_date), ('date_invoice', '<=', self.end_date), ('state', '=', 'paid' ), ('type', '=', 'out_invoice' ) ])
+        invoices = self.env['account.invoice'].search([ ('date_invoice', '>=', self.start_date), ('date_invoice', '<=', self.end_date), ('state', '=', 'paid' ), ('type', '=', 'out_invoice' ) ], order="date_invoice asc")
         invoices_list = [ 
             {
                 "number" : item.number,
